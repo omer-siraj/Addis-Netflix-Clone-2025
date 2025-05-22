@@ -1,62 +1,77 @@
-/* Outer container that sticks to top */
+/* Sticky header */
 .header_outer_container {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    height: 10vh;
-    color: white;
-    transition: all 0.5s ease-in;
-    z-index: 10;
-  }
-  
-  /* Optional scroll background */
-  .nav_black {
-    background-color: rgb(20, 20, 20);
-  }
-  
-  /* Inner container that holds left and right */
-  .header_container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-  }
-  
-  /* LEFT SECTION (Logo + Nav links) */
-  .header_left ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header_left li {
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  /* RIGHT SECTION (Icons) */
-  .header_right ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header_right li {
-    cursor: pointer;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+  transition: background-color 0.5s ease;
+}
+
+/* Scroll active */
+.nav_black {
+  background-color: rgb(20, 20, 20);
+}
+
+/* Inner content */
+.header_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.netflix_logo {
+  width: 100px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+/* Navigation */
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.nav_links ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_links li {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav_links li:hover {
+  color: #e50914;
+}
+
+/* Right side icons */
+.header_right ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header_right li {
+  color: white;
+  cursor: pointer;
+  font-size: 22px;
+  transition: transform 0.2s;
+}
+
+.header_right li:hover {
+  transform: scale(1.2);
+}
