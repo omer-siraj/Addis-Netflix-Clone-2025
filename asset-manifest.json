@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Addis-Netflix-Clone-2025/static/css/main.9d9d9740.css",
+    "main.js": "/Addis-Netflix-Clone-2025/static/js/main.f9fb03ce.js",
+    "static/media/netflix_PNG6.png": "/Addis-Netflix-Clone-2025/static/media/netflix_PNG6.5bc85db962ee4910b7ec.png",
+    "index.html": "/Addis-Netflix-Clone-2025/index.html",
+    "main.9d9d9740.css.map": "/Addis-Netflix-Clone-2025/static/css/main.9d9d9740.css.map",
+    "main.f9fb03ce.js.map": "/Addis-Netflix-Clone-2025/static/js/main.f9fb03ce.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d9d9740.css",
+    "static/js/main.f9fb03ce.js"
+  ]
+}
